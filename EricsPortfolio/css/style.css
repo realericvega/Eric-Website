@@ -1,0 +1,57 @@
+html {
+    font-family: 'Quicksand', sans-serif;
+   text-align: center;
+}
+
+#eric_photo {
+    display: block;
+    border-radius: 50%;
+    max-width: 275px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+#title {
+    line-height: 0.5;
+}
+
+.social_link {
+    color: black;
+}
+
+.social_link:hover {
+    color: grey;
+}
+
+.social_link_row * {
+    display: inline-block;
+}
+
+.social_link {
+    position: relative;
+    display: inline-block;
+}
+  
+.social_link .social_link_text {
+    visibility: hidden;
+    width: 120px;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 3px;
+    background-color: rgba(35, 39, 42, 0.8);
+  
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -60px;
+
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.social_link:hover .social_link_text {
+    opacity: 1;
+    transition: opacity 1s;
+}
