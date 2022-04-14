@@ -13,6 +13,18 @@ html {
     margin-top: 10%;
 }
 
+.dark-mode {
+    background-color: #353535;
+    color: #f8f9fa;
+}
+
+#dark_mode_button {
+    position:absolute;
+    top:50px;
+    right:50px;
+    border-radius: 50%;
+}
+
 #title {
     line-height: 0.5;
 }
@@ -52,6 +64,11 @@ html {
 }
 
 .social_link:hover .social_link_text {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+#dark_mode_button:hover {
     opacity: 1;
     transition: opacity 1s;
 }
